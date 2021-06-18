@@ -1,0 +1,27 @@
+{
+  "name": "contentful-demo",
+  "version": "1.0.0",
+  "private": true,
+  "scripts": {
+    "build": "nuxt build",
+    "dev": "nuxt",
+    "generate": "nuxt generate",
+    "start": "nuxt start"
+  },
+  "dependencies": {
+    "@babel/runtime": "^7.14.5",
+    "contentful": "^8.3.7",
+    "core-js": "^3.14.0",
+    "nuxt": "^2.15.3",
+    "vue-markdown": "^2.2.4",
+    "vuetify": "^2.4.0"
+  },
+  "devDependencies": {
+    "@nuxtjs/vuetify": "^1.11.3",
+    "babel-eslint": "^7.1.1",
+    "sass": "~1.32.0",
+    "sass-loader": "^10.0.0",
+    "vue-cli-plugin-vuetify": "~2.4.1",
+    "vuetify-loader": "^1.7.0"
+  }
+}
