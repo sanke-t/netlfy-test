@@ -48,9 +48,9 @@ export default {
     CTF_BLOG_POST_TYPE_ID: config.CTF_BLOG_POST_TYPE_ID
   },
   
-  router: {
-    base: '/app'
-  },
-
+  plugins: [
+    { src: '~/plugins/api.js' }
+  ],
+  
   target: 'static'
 }

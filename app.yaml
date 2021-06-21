@@ -1,19 +1,28 @@
+service: service-dapp
 runtime: nodejs14
 
 instance_class: F2
 
 handlers:
-  - url: /_nuxt
-    static_dir: .nuxt/dist/client
-    secure: always
-
+  
   - url: /(.*\.(gif|png|jpg|ico|txt))$
     static_files: static/\1
     upload: static/.*\.(gif|png|jpg|ico|txt)$
     secure: always
 
+  - url: /(.+)/(.+)/(.+)/(.*\.js)$
+    static_files: _nuxt/\1/\2/\3/\4/\5/\6/\7
+    upload: static/.*\.js$
+    secure: always
+
+  - url: /(.+)/(.*\.js)$
+    static_files: _nuxt/\1/\2/\3/\4/\5/\6/\7
+    upload: static/.*\.js$
+    secure: always
+
   - url: /.*
     script: auto
+    secure: always
 
 env_variables:
   HOST: '0.0.0.0'
